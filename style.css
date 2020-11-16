@@ -1,7 +1,9 @@
 *{
 	box-sizing: border-box;
 }
-html, body {
+
+/***** html *****/
+html, body{
 	margin: 0;
 	padding: 0;
 	font-family: "Quicksand";
@@ -11,13 +13,31 @@ html, body {
 	-webkit-tap-highlight-color: transparent
 }
 div{font-size: 20px}
-a{color: white;text-decoration: none}
-a:hover{text-decoration: underline}
+a{color: #e0e8ed;text-decoration: none}
+a:hover{text-decoration: underline;}
 button{
 	border-style: none;
 	outline: none;
 	cursor: pointer
 }
+header{
+	width: 100%;
+	height: 200px;
+	margin: 0 0 15px 0;
+	padding: 60px 0 60px 0;
+	text-align: center;
+	box-shadow: 0 0 10px #292f33, 0 0 10px #292f33
+}
+footer{
+	margin-top: 15px;
+	padding: 40px;
+	font-size: 15px;
+	text-align: center;
+	box-shadow: 0 0 10px #292f33, 0 0 10px #292f33
+}
+img{max-width: 100%;height: auto}
+
+/***** class *****/
 ::-webkit-scrollbar{width: 10px}
 ::-webkit-scrollbar-track{background-color: #1e2428}
 ::-webkit-scrollbar-thumb{background-color: #292f33}
@@ -26,30 +46,16 @@ button{
 	display: block;
 	clear: both
 }
-header{text-align: left}
-.bamboo,.bsbe,.yusha{
-	float: left;
-	margin: 0 0 10px 0;
-	width: 100%;
-	height: 120px;
-	padding: 75px 10px 10px 100px;
-	background-size: contain;
-	image-rendering: pixelated;
-	background-repeat: no-repeat;
-	box-shadow: 0 0 10px #1e2428, 0 0 12px #1e2428
-}
-.bamboo{background-image: url(picture/bamboo_sapling.png)}
-.bsbe{background-image: url(picture/bsbe.jpg)}
-.yusha{background-image: url()}
 .content{padding: 0 20px 0 20px}
 .content2{padding: 0 30px 0 30px}
 .bcolor1{background-color: #292f33}
 .bcolor2{background-color: #1e2428}
 .bcolor3{background-color: #0e1518}
+.grad1{background-image:linear-gradient(#0e1518, 50%, #292f33)}
+.grad2{background-image:linear-gradient(#292f33, 50%, #0e1518)}
 .box,.box2,.box3{
 	float: left;
 	padding: 15px;
-	border-radius: 3px;
 	line-height: 30px;
 	text-shadow: 0 0 3px black
 }
@@ -68,15 +74,8 @@ header{text-align: left}
 	padding: 15px
 }
 .tw{padding: 0;text-align: center}
-footer {
-	background-color: #1e2428;
-        margin-top: 10px;
-	padding: 40px;
-	font-size: 15px;
-	text-align: center;
-	box-shadow: 0 0 10px #1e2428, 0 0 12px #1e2428
-}
-img{max-width: 100%;height: auto}
+
+/**** media ***/
 @media (max-width: 720px){
 	.box2{width: 100%}
 	.box2{height: auto;overflow:hidden}
