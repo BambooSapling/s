@@ -49,8 +49,8 @@ img{max-width: 100%;height: auto}
 .content{padding: 0 20px 0 20px}
 .content2{padding: 0 30px 0 30px}
 .bcolor1{background-color: #000000}
-.bcolor2{background-color: #1e2428}
-.bcolor3{background-color: #0e1518}
+.bcolor2{background-color: #000000}
+.bcolor3{background-color: #000000}
 .grad1{background-image:linear-gradient(#0e1518, 50%, #292f33)}
 .grad2{background-image:linear-gradient(#292f33, 50%, #0e1518)}
 .box,.box2,.box3{
