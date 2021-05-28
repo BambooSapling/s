@@ -1,20 +1,25 @@
-*{
-	box-sizing: border-box;
-}
+*{ box-sizing: border-box; }
 
-/***** html *****/
+/*****************************************/
 body{
 	margin: 0;
 	padding: 0;
-	font-family: "Quicksand";
-	color: #e0e8ed;
+	font-family: "Poiret One";
+	color: rgb(200,200,200);
 	user-select: none;
 	-webkit-user-select: none;
 	-webkit-tap-highlight-color: transparent
 }
-div{font-size: 20px}
-a{color: #e0e8ed;text-decoration: none}
-a:hover{text-decoration: underline;}
+div{ font-size: 30px }
+a{
+	color: rgb(180,180,180);
+	text-align: left;
+	text-decoration: none
+}
+a:hover{
+	color: white;
+	text-shadow: 0 0 5px
+}
 button{
 	border-style: none;
 	outline: none;
@@ -22,69 +27,69 @@ button{
 }
 header{
 	width: 100%;
-	height: 200px;
-	margin: 0 0 15px 0;
-	padding: 60px 0 60px 0;
-	text-align: center;
-	box-shadow: 0 0 10px #292f33, 0 0 10px #292f33
+	height: 250px;
+	padding: 160px 0 0 40px;
+	font-size: 40px;
+	text-align: left;
 }
 footer{
-	margin-top: 15px;
-	padding: 40px;
+	padding: 60px 0 50px 0;
 	font-size: 15px;
 	text-align: center;
-	box-shadow: 0 0 10px #292f33, 0 0 10px #292f33
 }
-img{max-width: 100%;height: auto}
+i{ color: rgb(130,130,130) }
 
-/***** class *****/
+/******************************************/
 ::-webkit-scrollbar{width: 10px}
-::-webkit-scrollbar-track{background-color: #1e2428}
-::-webkit-scrollbar-thumb{background-color: #292f33}
+::-webkit-scrollbar-track{background-color: black}
+::-webkit-scrollbar-thumb{background-color: rgb(50,50,50)}
 .row::after {
 	content: "";
 	display: block;
 	clear: both
 }
-.content{padding: 0 20px 0 20px}
-.content2{padding: 0 30px 0 30px}
-.bcolor1{background-color: #292f33}
-.bcolor2{background-color: #1e2428}
-.bcolor3{background-color: #0e1518}
-.grad1{background-image:linear-gradient(#0e1518, 50%, #292f33)}
-.grad2{background-image:linear-gradient(#292f33, 50%, #0e1518)}
-.box,.box2,.box3{
-	float: left;
-	padding: 15px;
-	line-height: 30px;
-	text-shadow: 0 0 3px black
+.bgtext{
+  background: rgba(0,0,0,0.8);
+	padding: 40px;
 }
-.box{width: 50%}
-.box div{padding: 10px}
+.bimg{
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	image-rendering: pixelated;
+}
+.descp{
+	font-size: 20px;
+	color: rgb(140,140,140)
+}
+.vertag{ font-size: 15px }
+.box,.box2,.box3{ float: left; }
+.box{ width: 50% }
 .box2{
 	width: 50%;
 	height: 500px;
 	overflow: auto
 }
-.box3{width: 100%}
-.bd{
-	text-align: center;
-	border: solid 2px #1e2428;
-	margin: 5px;
-	padding: 15px
-}
-.tw{padding: 0;text-align: center}
+.box3{ width: 100%}
+.tw{ padding: 10px; text-align: center }
 
-/**** media ***/
+/*****************************************/
 @media (max-width: 720px){
 	.box2{width: 100%}
-	.box2{height: auto;overflow:hidden}
-  	.box{width: 100%}
-  	.content{padding: 0}
+	.box2{height: auto; overflow:hidden}
+	.box{
+		width: 100%;
+		border: none;
+	}
 	.content2{padding: 5px}
 }
 @media (max-width: 512px){
-  	.box{padding: 0 0 10px 0}
+	div{font-size: 20px}
+	header{
+		font-size: 30px;
+		padding: 190px 0 0 30px
+	}
+	footer{ font-size: 13px }
 	.content2{padding: 0}
-	div{font-size: 18px}
+	.bgtext{padding: 30px}
 }
