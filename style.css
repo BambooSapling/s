@@ -48,9 +48,12 @@ img{ width: 100%; height: 500px}
 	display: block;
 	clear: both
 }
-.bgtext{
+.bgctext{
   background: rgba(0,0,0,0.8);
 	padding: 40px;
+}
+.btext{
+	padding: 10px 40px 10px 40px;
 }
 .bimg{
 	background-position: center;
